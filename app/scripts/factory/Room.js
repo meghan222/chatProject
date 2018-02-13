@@ -1,11 +1,13 @@
 (function() {
-    function Room($firebaseArray) {
-        var ref = firebase.database().ref().child("rooms");
-        var rooms = $firebaseArray(ref);
-        return {
-            all: rooms
-        };
-    }
+  function Room($firebaseArray) {
+    var Room = {};
+    var ref = firebase.database().ref().child("rooms");
+    var rooms = $firebaseArray(ref);
+
+    Room.all = rooms;
+
+    return Room;
+  }
 
     angular
         .module('chatProject')

@@ -1,9 +1,9 @@
 (function() {
-    function HomeCtrl(Room) {
+    function Home(Room) {
       this.rooms = Room.all;
     }
 
     angular
         .module('chatProject')
-        .controller('HomeCtrl', [HomeCtrl]);
+        .controller('HomeCtrl', ['Room', Home]);
 })();
