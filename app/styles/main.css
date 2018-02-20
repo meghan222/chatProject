@@ -1,0 +1,14 @@
+body {
+      background-color: lightgray;
+      font-family: 'Open Sans';
+      color: black;
+      min-height: 100%;
+      padding-bottom: 200px;
+  }
+
+.new-room-button{
+    color:black;
+    border: 3px solid black;
+    padding: 3px;
+
+}

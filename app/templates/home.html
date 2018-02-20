@@ -1,8 +1,10 @@
-<section class= "navigation" >
-    <div class = "heading">
-        <h1> Bloc Chat </h1>
-    </div>
-    <div ng-repeat="room in home.rooms">
-            <h3>{{ room.$id }}</h3>
+<section ng-controller="HomeCtrl as home">
+    <div class="navbar">
+        <h1>Bloc Chat</h1>
+        <button class="btn btn-default" type="button" ng-click="home.addRoom()">New Room</button>
+        <div ng-repeat="room in home.rooms">
+            <h3>{{ room.name }}</h3>
+        </div>
+
     </div>
 </section>
