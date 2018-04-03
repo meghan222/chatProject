@@ -1,0 +1,12 @@
+<div id="content">
+         <h1>{{ main.room.getActiveRoom() }}</h1>
+         <ul>
+           <li ng-repeat="message in main.messages">{{ message.content }}</li>
+         </ul>
+
+       </div>
+   <div id="sidebar">
+       <h1>Room List</h1>
+       <ul>
+ <li ng-repeat="room in main.room.all"><a ng-click="main.selectRoom(room)" >{{ room.$value }}</a></li>
+</ul>
